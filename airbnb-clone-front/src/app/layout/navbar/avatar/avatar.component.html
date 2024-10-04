@@ -1,1 +1,6 @@
-<p>avatar works!</p>
+<div class="flex align-content-center">
+  @if (imageUrl() != null) {
+    <img src="{{imageUrl()}}" alt="user-avatar" class="border-round-3xl avatar"
+      [ngClass]="avatarSize()">
+  }
+</div>

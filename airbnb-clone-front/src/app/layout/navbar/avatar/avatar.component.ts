@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-avatar',
@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './avatar.component.scss'
 })
 export class AvatarComponent {
+
+  imageUrl = input<string>()
+  avatarSize = input<"avatar-sm" | "avatar-xl">();
 
 }
