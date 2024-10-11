@@ -4,11 +4,12 @@ import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontaweso
 
 import { ButtonModule } from 'primeng/button';
 import { fontAwesomeIcons } from './shared/font-awesome-icons';
+import { NavbarComponent } from "./layout/navbar/navbar.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ButtonModule, FontAwesomeModule],
+  imports: [RouterOutlet, ButtonModule, FontAwesomeModule, NavbarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
