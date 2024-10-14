@@ -18,6 +18,7 @@ import { FooterComponent } from "./layout/footer/footer.component";
 export class AppComponent implements OnInit{
 
   faIconLibrary = inject(FaIconLibrary);
+  isListingView = true;
 
   ngOnInit(): void {
     this.initFontAwesome();
