@@ -29,6 +29,7 @@ export class NavbarComponent implements OnInit {
   location = "Anywhere";
   guests = "Add Guests";
   dates = "Any week";
+  places = []
 
   toastService = inject(ToastService);
 
